@@ -1,0 +1,112 @@
+body {
+    background-color: darkgray;
+}
+
+.back {
+    position: relative;
+
+    .header {
+        position: absolute;
+
+        background-color: rgb(0, 0, 167);
+        color: #FFF;
+        text-align: center;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        left: 50%;
+        transform: translate(-50%, 50%);
+        justify-content: space-between;
+        align-items: center;
+
+        width: 1200px;
+        height: 70px;
+
+        .header-2 {
+            background-color: cornflowerblue;
+            
+            display: flex;
+            align-items: center;
+
+            height: 70px;
+        }
+    }
+    
+    h2 {
+        margin: 0 30px;
+        font-size: 1.5rem;
+    }
+
+    strong {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .content {
+        position: absolute;
+
+        display: flex;
+        flex-direction: column;
+
+        left: 50%;
+        transform: translate(-50%, 10%);
+
+        margin-top: 60px;
+
+        width: 1200px;
+        height: 900px;
+    }
+
+    .options {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 60px;
+
+        align-items: center;
+    }
+
+    .seguradora{
+        width: 100px;
+        text-align: center;
+    }
+
+    .description {
+        width: 600px;
+        margin-left: -75px;
+        margin-top: 20px;
+
+        p {
+            margin-top: 15px;
+        }
+    }
+
+    .price {
+        margin-left: 50px;
+        text-align: center;
+
+    }
+
+    button {
+        margin-bottom: 10px;
+        border: none;
+        height: 40px;
+    }
+
+    #carrinho {
+        background-color: rgb(21, 40, 148);
+        color: #FFF;
+    }
+
+    #compra {
+        background-color: rgb(21, 148, 21);
+        color: #FFF;
+    }   
+
+    button:hover {
+        filter: brightness(0.9);
+        transition: 0.2s;
+        cursor: pointer;
+    }
+}

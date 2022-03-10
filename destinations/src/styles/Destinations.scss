@@ -1,0 +1,47 @@
+.background{
+    height: 100vh;
+    position: relative;
+
+    #form-search {
+        position: absolute;
+
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+        width: 200px;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #from, #to {
+        width: 200px;
+    }
+
+    select, input {
+        margin-bottom: 10px;
+    }
+
+    label {
+        margin-bottom: 0px;
+    }
+
+    button {
+        width: 100px;
+        height: 35px;
+        text-align: center;
+        
+        color: #FFF;
+        background-color: rgb(24, 179, 24);
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            filter: brightness(0.9);
+            transition: 0.2s;
+        }
+    }
+}
